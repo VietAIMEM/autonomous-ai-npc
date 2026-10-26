@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a399714727a7cc41a4f557394530358, type: 3}
+  m_Name: GeneratedMotionLibrary
+  m_EditorClassIdentifier: Assembly-CSharp::RoomAgent.GeneratedMotions.GeneratedMotionLibrary
+  motions:
+  - sourceReference: Assets/animation/phase15_motius/lacrimosa_motius_smpl22_animated.fbx
+    generatedClip: {fileID: 7400000, guid: edf274ad8cbd55146b78317b8003d408, type: 2}
+  - sourceReference: Assets/animation/phase15_motius/lacrimosa_production_motius_animated.fbx
+    generatedClip: {fileID: 7400000, guid: edf274ad8cbd55146b78317b8003d408, type: 2}
+  - sourceReference: Assets/MotionImports/Phase16/phase16_walking/2f5d893584ee508cb00bcff0c34bad4736e790494efca49179def9c80a26a827.fbx
+    generatedClip: {fileID: 7400000, guid: 4f72a8837b7374d4a992361229074604, type: 2}
+  - sourceReference: Assets/Resources/GeneratedMotions/Phase17/phase16_walking_processed_v1/v1/phase16_walking_processed_v1.anim
+    generatedClip: {fileID: 7400000, guid: 4e6d0069e73aab34f969b06e0b6805c9, type: 2}
+  - sourceReference: Assets/animation/dance
+    generatedClip: {fileID: -4671056281497532287, guid: aaa428b8569971d4496b75710042616f, type: 3}
+  - sourceReference: Assets/MotionImports/Phase16/phase23_editmode_smoke/2f5d893584ee508cb00bcff0c34bad4736e790494efca49179def9c80a26a827.fbx
+    generatedClip: {fileID: 7400000, guid: edeabb3ffe4212e4b8174fe79ad16c30, type: 2}
+  - sourceReference: Assets/MotionImports/Phase16/phase23_admin_walking_v2/2f5d893584ee508cb00bcff0c34bad4736e790494efca49179def9c80a26a827.fbx
+    generatedClip: {fileID: 7400000, guid: b110f8235ce89a44eaba2d62d3e2cb3e, type: 2}
+  - sourceReference: Assets/MotionImports/Phase16/phase23_admin_walking_v5/2f5d893584ee508cb00bcff0c34bad4736e790494efca49179def9c80a26a827.fbx
+    generatedClip: {fileID: 7400000, guid: bb8d61a4d483f2544a260528970918fa, type: 2}
+  - sourceReference: Assets/MotionImports/Phase16/phase23_admin_walking_v6/2f5d893584ee508cb00bcff0c34bad4736e790494efca49179def9c80a26a827.fbx
+    generatedClip: {fileID: 7400000, guid: 7488daad97430b34b8082d059b8c1271, type: 2}
+  - sourceReference: Assets/MotionImports/Phase16/phase23_admin_walking_v7/2f5d893584ee508cb00bcff0c34bad4736e790494efca49179def9c80a26a827.fbx
+    generatedClip: {fileID: 7400000, guid: 826ed8a6df876124eb5209ef7e76361f, type: 2}
+  - sourceReference: Assets/Resources/GeneratedMotions/Phase17/phase23_admin_walking_v7_processed_v1/v1/phase23_admin_walking_v7_processed_v1.anim
+    generatedClip: {fileID: 7400000, guid: 7f405f6c90e06e04ab0844b813dad5e2, type: 2}

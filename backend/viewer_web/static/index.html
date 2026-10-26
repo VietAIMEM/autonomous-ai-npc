@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lacrimosa — Live</title>
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='14' fill='%23e11d48'/><text x='16' y='22' font-size='18' text-anchor='middle' fill='white'>L</text></svg>">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="avatar">L</span>
+      <div class="brand-text">
+        <h1>Lacrimosa</h1>
+        <p>AI streamer · live from room_agent</p>
+      </div>
+    </div>
+    <div class="topbar-status">
+      <span id="live-badge" class="badge badge-offline">Offline</span>
+      <span id="viewer-count" class="viewer-count">0 watching</span>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="stage">
+      <div class="player">
+        <video id="video" playsinline muted autoplay></video>
+        <div id="player-overlay" class="player-overlay">
+          <div class="spinner" aria-hidden="true"></div>
+          <p id="overlay-text">Connecting to the stream…</p>
+        </div>
+        <div class="activity-pill">
+          <span id="activity-dot" class="activity-dot"></span>
+          <span id="activity-label">Idle</span>
+        </div>
+      </div>
+      <div class="stage-meta">
+        <div>
+          <strong>Lacrimosa Live</strong>
+          <span id="stream-detail" class="muted">waiting for the stream</span>
+        </div>
+        <div id="now-line" class="muted">Lacrimosa is getting ready.</div>
+      </div>
+    </section>
+
+    <aside class="chat-panel">
+      <div class="chat-head">
+        <span>Live chat</span>
+        <span id="chat-connection" class="chat-state">connecting…</span>
+      </div>
+      <ol id="messages" class="messages"></ol>
+      <div id="thinking" class="thinking hidden">Lacrimosa is reading chat…</div>
+      <form id="composer" class="composer" autocomplete="off">
+        <input id="message-input" maxlength="480" placeholder="Say something to Lacrimosa…" aria-label="Message">
+        <button id="send-button" type="submit">Chat</button>
+      </form>
+      <div class="identity">
+        <span>Watching as <strong id="viewer-id">viewer</strong></span>
+        <span id="send-state" class="send-state"></span>
+      </div>
+    </aside>
+  </main>
+
+  <script src="/vendor/hls.min.js"></script>
+  <script src="/app-state.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>

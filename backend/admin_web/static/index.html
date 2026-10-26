@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Room Agent Admin</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/app-state.js" defer></script>
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <div id="login-view" class="login-shell" hidden>
+      <main class="login-panel">
+        <header class="login-head">
+          <p class="eyebrow">Room Agent</p>
+          <h1>Admin Dashboard</h1>
+          <p class="muted">
+            Privileged operations surface. The backend authorizes every request
+            and holds every provider credential.
+          </p>
+        </header>
+        <form id="login-form" class="login-form" autocomplete="off" novalidate>
+          <label for="login-token">Admin token</label>
+          <input
+            id="login-token"
+            name="token"
+            type="password"
+            autocomplete="current-password"
+            spellcheck="false"
+            required
+          />
+          <button id="login-submit" type="submit" class="btn btn-primary">
+            Sign in
+          </button>
+        </form>
+        <p id="login-error" class="alert alert-bad" role="alert" hidden></p>
+        <p class="muted small">
+          The token is verified by the backend and exchanged for an HttpOnly
+          session cookie. It is never stored in this page.
+        </p>
+      </main>
+    </div>
+
+    <div id="app-view" class="app-shell" hidden>
+      <aside class="sidebar">
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true">RA</span>
+          <span class="brand-copy">
+            <span class="brand-title">Room Agent</span>
+            <span class="brand-sub">Admin Dashboard</span>
+          </span>
+        </div>
+        <nav id="nav" class="nav" aria-label="Admin sections"></nav>
+        <div class="sidebar-foot">
+          <p id="role-badge" class="badge">role unknown</p>
+          <p id="env-badge" class="badge">environment unknown</p>
+        </div>
+      </aside>
+      <main class="content">
+        <header class="topbar">
+          <div class="topbar-meta">
+            <h1 id="section-title">Overview</h1>
+            <p id="section-subtitle" class="muted small"></p>
+          </div>
+          <div class="topbar-actions">
+            <span id="last-refresh" class="muted small">not refreshed yet</span>
+            <button id="refresh-button" type="button" class="btn">Refresh</button>
+            <button id="logout-button" type="button" class="btn btn-quiet">
+              Sign out
+            </button>
+          </div>
+        </header>
+        <div id="banner" class="banner" role="status" aria-live="polite" hidden></div>
+        <div id="result" class="result" hidden></div>
+        <div id="panel" class="panel">
+          <p class="muted">Contacting the backend…</p>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
